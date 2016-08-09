@@ -40,3 +40,5 @@ encoding: utf-8
 # Misc - build
 show_drafts: false
 
+sass:
+  sass_dir: ./_sass
