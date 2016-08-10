@@ -2,7 +2,6 @@
  * Site header
  */
 .site-header {
-    border-top: 5px solid $grey-color-dark;
     border-bottom: 1px solid $grey-color-light;
     min-height: 56px;
 
@@ -22,6 +21,11 @@
     &:visited {
         color: $grey-color-dark;
     }
+}
+
+// For space between post titles and metadata
+h2 {
+    margin-bottom: 1px;
 }
 
 .site-nav {
@@ -82,7 +86,7 @@
 
         .page-link {
             display: block;
-            padding: 5px 10px;
+            padding: 2px 5px;
 
             &:not(:last-child) {
                 margin-right: 0;
@@ -105,12 +109,6 @@
 .footer-heading {
     font-size: 18px;
     margin-bottom: $spacing-unit / 2;
-}
-
-.contact-list,
-.social-media-list {
-    list-style: none;
-    margin-left: 0;
 }
 
 .footer-col-wrapper {
@@ -185,13 +183,15 @@
 }
 
 .post-meta {
+    margin-top: 1px;
     font-size: $small-font-size;
     color: $grey-color;
 }
 
 .post-link {
     display: block;
-    font-size: 24px;
+    font-size: 28px;
+    margin-bottom: 1px;
 }
 
 
