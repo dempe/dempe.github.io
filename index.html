@@ -14,6 +14,7 @@ layout: default
             <a href="#{{ tag | slugify }}"> {{ tag }} </a>
             {% endfor %}
         </span>
+        <p>{{ post.excerpt }}</p>
       </li>
     {% endfor %}
   </ul>
