@@ -11,4 +11,4 @@ permalink: /about/
   </blockquote>
 </div>
 
-This site's title, {{ site.title | escape }}, (pronounced show-sheen), is a Zen concept roughly translated as "beginner's mind."  It implies curiosity, openness, and approaching things without preconceptions.  It is the aim of this blog to regard topics with the eyes of the beginner.
+This site's title, {{ site.title | escape }}, (pronounced show-sheen) is a Zen concept roughly translated as "beginner's mind."  It implies curiosity, openness, and approaching things without preconceptions.  It is the aim of this blog to regard topics with the eyes of a beginner.
