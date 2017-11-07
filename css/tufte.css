@@ -1,30 +1,17 @@
----
----
-@charset "utf-8";
-
-// Our variables
-$base03:    #002b36;
-$base02:    #073642;
-$base01:    #586e75;
-$base00:    #657b83;
-$base0:     #839496;
-$base1:     #93a1a1;
-$base2:     #eee8d5;
-$base3:     #fdf6e3;
-$yellow:    #b58900;
-$orange:    #cb4b16;
-$red:       #dc322f;
-$magenta:   #d33682;
-$violet:    #6c71c4;
-$blue:      #268bd2;
-$cyan:      #2aa198;
-$green:     #859900;
-
-// Import partials from the `minima` theme.
-@import "minima";
+@charset "UTF-8";
 
 /* Import ET Book styles
    adapted from https://github.com/edwardtufte/et-book/blob/gh-pages/et-book.css */
+
+.site-title { font-size: 25px;
+              margin: 10px;
+              float: left;
+}
+
+.page-link { font-size: 25px;
+             margin: 10px;
+             float: right;
+}
 
 @font-face { font-family: "et-book";
              src: url("et-book/et-book-roman-line-figures/et-book-roman-line-figures.eot");
@@ -50,8 +37,6 @@ $green:     #859900;
              font-weight: normal;
              font-style: normal; }
 
-
-
 /* Tufte CSS styles */
 html { font-size: 15px; }
 
@@ -59,11 +44,11 @@ body { width: 87.5%;
        margin-left: auto;
        margin-right: auto;
        padding-left: 12.5%;
-       font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;                                                                                                     background-color: #fffff8;
+       font-family: et-book, Palatino, "Palatino Linotype", "Palatino LT STD", "Book Antiqua", Georgia, serif;
+       background-color: #fffff8;
        color: #111;
        max-width: 1400px;
        counter-reset: sidenote-counter; }
-
 
 h1 { font-weight: 400;
      margin-top: 4rem;
@@ -85,7 +70,6 @@ h3 { font-style: italic;
      margin-bottom: 0;
      line-height: 1; }
 
-
 hr { display: block;
      height: 1px;
      width: 55%;
@@ -93,7 +77,6 @@ hr { display: block;
      border-top: 1px solid #ccc;
      margin: 1em 0;
      padding: 0; }
-
 
 p.subtitle { font-style: italic;
              margin-top: 1rem;
@@ -111,7 +94,6 @@ article { position: relative;
 
 section { padding-top: 1rem;
           padding-bottom: 1rem; }
-
 
 p, ol, ul { font-size: 1.4rem; }
 
@@ -143,12 +125,9 @@ blockquote footer { width: 55%;
                     font-size: 1.1rem;
                     text-align: right; }
 
-blockquote { border: 0px; }
-
 section>ol, section>ul { width: 45%;
                          -webkit-padding-start: 5%;
                          -webkit-padding-end: 5%; }
-
 
 li { padding: 0.5rem 0; }
 
@@ -175,9 +154,9 @@ figcaption { float: right;
 figure.fullwidth figcaption { margin-right: 24%; }
 
 /* Links: replicate underline that clears descenders */
-a:link, a:visited { color: inherit; 
-                    width: auto; }
-a:link:not(.site-title) { text-decoration: none;
+a:link, a:visited { color: inherit; }
+
+a:link { text-decoration: none;
          background: -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#fffff8, #fffff8), -webkit-linear-gradient(#333, #333);
          background: linear-gradient(#fffff8, #fffff8), linear-gradient(#fffff8, #fffff8), linear-gradient(#333, #333);
          -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
@@ -305,6 +284,3 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
                             label { cursor: pointer; }
                             div.table-wrapper, table { width: 85%; }
                             img { width: 100%; } }
-
-header, .site-footer { width: 75% }
-.post-link { display: inline-block; }
