@@ -103,7 +103,6 @@ h3 { font-style: italic;
      margin-bottom: 0;
      line-height: 1; }
 
-
 hr { display: block;
      height: 1px;
      width: 55%;
@@ -111,7 +110,6 @@ hr { display: block;
      border-top: 1px solid #ccc;
      margin: 1em 0;
      padding: 0; }
-
 
 p.subtitle { font-style: italic;
              margin-top: 1rem;
@@ -151,7 +149,7 @@ div.epigraph > blockquote > footer { font-style: normal; }
 div.epigraph > blockquote > footer > cite { font-style: italic; }
 /* end chapter epigraphs styles */
 
-blockquote { font-size: 1.4rem; 
+blockquote { font-size: 1.4rem;
              color: #000000; }
 
 blockquote p { width: 55%;
@@ -193,7 +191,7 @@ figcaption { float: right;
 figure.fullwidth figcaption { margin-right: 24%; }
 
 /* Links: replicate underline that clears descenders */
-a:link, a:visited { color: inherit; 
+a:link, a:visited { color: inherit;
                     width: auto; }
 a:link:not(.site-title) { text-decoration: none;
          background: -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient(#333, #333);
@@ -245,8 +243,10 @@ img { max-width: 100%; }
 blockquote .sidenote, blockquote .marginnote { margin-right: -82%;
                                                min-width: 59%;
                                                text-align: left; }
+                                               
+p, footer, table, ul, ol { width: 55%; }
 
-p, footer, table { width: 55%; }
+ol > ol, ul > ul, li, li > ol, li > ul { width: 100%; }
 
 div.fullwidth, table.fullwidth { width: 100%; }
 
@@ -327,7 +327,7 @@ label.margin-toggle:not(.sidenote-number) { display: none; }
 header, .site-footer { width: 75% }
 header { margin-top: 20px; }
 .post-link { display: inline-block; }
-body {background-color: $background-color;} 
+body {background-color: $background-color;}
 .site-title { font-family: "kouzan-gyousho";
               font-size: 64px; }
 :lang(ja) { font-family: "han-serif"; }
