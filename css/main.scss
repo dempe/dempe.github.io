@@ -243,7 +243,7 @@ img { max-width: 100%; }
 blockquote .sidenote, blockquote .marginnote { margin-right: -82%;
                                                min-width: 59%;
                                                text-align: left; }
-                                               
+
 p, footer, table, ul, ol { width: 55%; }
 
 ol > ol, ul > ul, li, li > ol, li > ul { width: 100%; }
@@ -331,3 +331,4 @@ body {background-color: $background-color;}
 .site-title { font-family: "kouzan-gyousho";
               font-size: 64px; }
 :lang(ja) { font-family: "han-serif"; }
+.post-list p { width: 100%; }
