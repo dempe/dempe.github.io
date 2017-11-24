@@ -7,14 +7,14 @@ tags: machine-learning
 
 The following are my class notes for Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome) on [Coursera](https://www.coursera.org/) with some notes supplemented from elsewhere.
 
-# Week I
-
 ## Introduction
 
 ### Definitions
   - _Machine learning_ is teaching a computer to learn without explicitly programming it.
-  - _Machine learning_ is when a computer improves in task, T, based on experience, E, measured in performance, P.
-    - For example, T: marking email as spam, E: watching user mark email as spam, P: correctly marking email as spam
+  - _Machine learning_ is when a computer improves in task, _T_, based on experience, _E_, measured in performance, _P_.  For example,
+    - _T_: marking email as spam
+    - _E_: watching user mark email as spam
+    - _P_: correctly marking email as spam
 
 
 ### Types of Machine Learning
@@ -72,8 +72,6 @@ The following are my class notes for Andrew Ng's [machine learning course](https
       - _θ<sub>1</sub> := (α/2m) * ∑<sub>i=0;m</sub>((h<sub>θ</sub>(x<sub>i</sub>) - h<sub>i</sub>)x<sub>i</sub>)_
   - GD for linear regression has no local optima; only a global minimum, and, thus, should always converge assuming the learning rate, α, is not too large.
   - This form of GD is called "batch gradient descent", since it looks at all the training examples at once.
-
-# Week II
 
 ## Multivariate Linear Regression
 
