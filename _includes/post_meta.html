@@ -1,0 +1,5 @@
+<span class="post-meta">{{ page.date | date: "%Y-%m-%d" }} |
+  {% for tag in page.tags %}
+  <a href="/topics/#{{ tag | slugify }}"> {{ tag }} </a>
+  {% endfor %}
+</span>

@@ -1,12 +1,9 @@
 ---
 layout: default
 ---
+
 <article class="post">
-    <h1>{{ page.title | escape }}</h1>
+  <h1>{{ page.title | escape }}</h1>
   <div class="post-content">{{ content }}</div>
-  <span class="post-meta">{{ page.date | date: "%Y-%m-%d" }} |
-    {% for tag in page.tags %}
-    <a href="#{{ tag | slugify }}"> {{ tag }} </a>
-    {% endfor %}
-  </span>
+  {% include post_meta.html %}
 </article>
