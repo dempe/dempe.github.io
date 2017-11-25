@@ -6,7 +6,10 @@ tags: machine-learning
 excerpt: The following are my class notes for Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome) on [Coursera](https://www.coursera.org/) (with the occasional note supplemented from elsewhere).
 ---
 
-<span class="marginnote">Unless otherwise noted, the images are also taken from his course.</span>
+{%
+   include margin_note.html
+   note="Unless otherwise noted, the images are also taken from his course."
+%}
 
 The following are my class notes for Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome) on [Coursera](https://www.coursera.org/) (with the occasional note supplemented from elsewhere).
 
@@ -31,10 +34,12 @@ The following are my class notes for Andrew Ng's [machine learning course](https
 ## Model and Cost Function
 
 ### Model Representation
-  <span class="marginnote">
-    <img src="/img/model.png" alt="Image of how the hypothesis function works with the training data">
-    A learning algorithm takes in training data and determines the parameters that make the hypothesis most accurately predict a value in Y given a value in X.
-  </span>
+{%
+   include margin_note_with_image.html
+   note='A learning algorithm takes in training data and determines the parameters that make the hypothesis most accurately predict a value in Y given a value in X.'
+   src='/img/model.png'
+   alt='Image of how the hypothesis function works with the training data'
+%}
 
   - Notation
     - _m_ = the number of training samples
