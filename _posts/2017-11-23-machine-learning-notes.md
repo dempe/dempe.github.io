@@ -91,7 +91,7 @@ The following are my class notes for Andrew Ng's [machine learning course](https
   - The GD algorithm is - _repeat until convergence_: _θ<sub>j</sub> := θ<sub>j</sub> - α(∂/∂θ<sub>j</sub>)J(θ<sub>0</sub>, θ<sub>1</sub>, ..., θ<sub>n</sub>)_, where _j ⊂ {0, 1, ..., n}_, the feature index number.
   {% include side_note.html
      id="gd2"
-     note="Before using GD, you must choose a starting point on _J_"
+     note="Before using GD, you must choose a starting point on _J_."
   %}
 
 ### Gradient Descent in Practice
