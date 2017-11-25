@@ -5,7 +5,7 @@ date: 2017-11-23 00:00:55
 tags: machine-learning
 ---
 
-The following are my class notes for Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome) on [Coursera](https://www.coursera.org/) with some notes supplemented from elsewhere.
+The following are my class notes for Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome) on [Coursera](https://www.coursera.org/) (with the occasional note supplemented from elsewhere).
 
 ## Introduction
 
