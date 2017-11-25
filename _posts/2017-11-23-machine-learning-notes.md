@@ -4,6 +4,7 @@ title: "Machine Learning Notes"
 date: 2017-11-23 00:00:55
 tags: machine-learning
 ---
+<span class="marginnote">Unless otherwise noted, the images are also taken from his course.</span>
 
 The following are my class notes for Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome) on [Coursera](https://www.coursera.org/) (with the occasional note supplemented from elsewhere).
 
@@ -20,7 +21,7 @@ The following are my class notes for Andrew Ng's [machine learning course](https
 ### Types of Machine Learning
   - _Supervised_ - Algorithm is given a set of correct or known answers
     - _Classification_  - fit data into discrete categories (e.g., given a song, determine its genre)
-    - _Regression_ - fit data to continuous function (e.g., given a person, determine his or her age)
+    - _Regression_ - fit data to continuous function (e.g., given a person, determine his or her age or, given a tumor, determine if it is malignant or not)
   - _Unsupervised_ - Algorithm is given a set of _unlabeled_ data and tasked with finding structure in the data
     - _Clustering_  - find groups of like data (e.g., finding market segments, grouping similar news articles, etc.)
     - _Non-Clustering_ - singular value decomposition, SVD
@@ -28,19 +29,25 @@ The following are my class notes for Andrew Ng's [machine learning course](https
 ## Model and Cost Function
 
 ### Model Representation
+  <span class="marginnote">
+    <img src="/img/model.png" alt="Image of how the hypothesis function works with the training data">
+    A learning algorithm takes in training data and determines the parameters that make the hypothesis most accurately predict a value in Y given a value in X.
+  </span>
+
   - Notation
     - _m_ = the number of training samples
-    - _x<sup>(i)</sup>_ = the the input for the i<sup>th</sup> training sample
-    - _x<sup>(i)</sup>_ = the the input for the i<sup>th</sup> training sample
-    - _x<sup>(i)</sup>_ = the the input for the i<sup>th</sup> training sample
-    - _y<sup>(i)</sup>_ = the the output for the i<sup>th</sup> training sample
+    - _x<sup>(i)</sup>_ = the the input for the _i<sup>th</sup>_ training sample
+    - _x<sup>(i)</sup>_ = the the input for the _i<sup>th</sup>_ training sample
+    - _x<sup>(i)</sup>_ = the the input for the _i<sup>th</sup>_ training sample
+    - _y<sup>(i)</sup>_ = the the output for the _i<sup>th</sup>_ training sample
     - _X_ = the space of input values
     - _Y_ = the space of output values
   - The goal is to determine an "hypothesis" function, _h: X -> Y_
 
 ### Cost Function
   - A cost function measures the efficiency of an hypothesis function.
-  - A cost function, _J(θ<sub>0</sub>,θ<sub>1</sub>) = 1/2m * ∑<sub>i=0;m</sub>(h<sub>θ</sub>(x<sub>i</sub>) - h<sub>i</sub>)<sup>2</sup>_, is a sum (for each training sample) of mean square errors (predicted - actual) divided by two (for ease of gradient descent calculation (when differentiated, the 1/2 cancels out)).
+  - A cost function, _J(θ<sub>0</sub>,θ<sub>1</sub>) = 1/2m * ∑<sub>i=0;m</sub>(h<sub>θ</sub>(x<sub>i</sub>) - h<sub>i</sub>)<sup>2</sup>_, is a sum, for each training sample, of mean square errors (predicted - actual) divided by two<label for="sn-gd" class="margin-toggle sidenote-number"></label>.
+  <span class="sidenote">For ease of gradient descent calculation (i.e., when differentiated, the 1/2 cancels out).</span>
   - The goal is to minimize the cost function, _J(θ<sub>0</sub>, θ<sub>1</sub>)_ by tweaking the parameters, θ<sub>0</sub> and θ<sub>1</sub>, to the hypothesis function, _h<sub>θ</sub>(x) = θ<sub>0</sub> + θ<sub>1</sub>x_.
   - The cost function essentially maps the parameters, _θ<sub>0</sub>, θ<sub>1</sub>_, of a model to a number.
   - We want to find the global minimum of _J(θ<sub>0</sub>, θ<sub>1</sub>)_
@@ -55,6 +62,10 @@ The following are my class notes for Andrew Ng's [machine learning course](https
   - _Gradient descent_ is a method for finding the minimum of J.
   - GD works by taking the derivative of J.
   - It follows the path of _steepest_ descent.
+  <span class="marginnote">
+    <img src="/img/gradient_descent.png" alt="Image of gradient descent in action.">
+    Gradient descent finds a minimum of the cost function by taking the path of steepest descent.
+  </span>
   - How quickly it converges can be controlled via the _learning rate_ parameter, α.
     - A larger α yields larger steps, while a smaller α yields smaller steps.
     - The _direction_ of each step is based on the partial derivative of J.
@@ -79,8 +90,8 @@ The following are my class notes for Andrew Ng's [machine learning course](https
 
 ### Multiple Features
 - Notation
-  - _x<sup>(i)</sup><sub>j</sub>_ = the value of the j<sup>th</sup> feature of the i<sup>th</sup> training sample
-  - _x<sup>(i)</sup>_ = the input features of the i<sup>th</sup> training sample
+  - _x<sup>(i)</sup><sub>j</sub>_ = the value of the _j<sup>th</sup>_ feature of the _i<sup>th</sup>_ training sample
+  - _x<sup>(i)</sup>_ = the input features of the _i<sup>th</sup>_ training sample
   - _m_ = the number of training examples
   - _n_ = the number of features
 - The multivariate form of the hypothesis function is _h<sub>θ</sub>(x) = θ<sub>0</sub> + θ<sub>1</sub>x<sub>1</sub> + ... θ<sub>n</sub>x<sub>n</sub>_
