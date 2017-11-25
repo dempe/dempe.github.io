@@ -61,15 +61,20 @@ The following are my class notes for Andrew Ng's [machine learning course](https
   - The goal is to minimize the cost function, _J(θ<sub>0</sub>, θ<sub>1</sub>)_ by tweaking the parameters, θ<sub>0</sub> and θ<sub>1</sub>, to the hypothesis function, _h<sub>θ</sub>(x) = θ<sub>0</sub> + θ<sub>1</sub>x_.
   - The cost function essentially maps the parameters, _θ<sub>0</sub>, θ<sub>1</sub>_, of a model to a number.
   - We want to find the global minimum of _J(θ<sub>0</sub>, θ<sub>1</sub>)_
-  - _Contour Plots_: way to graph a 3D cost function in 2d
+  {%
+     include margin_note_with_image.html
+     note='_Contour plots_ are a way to graph a 3D cost function in 2D.'
+     src='/img/contour_plot.png'
+     alt='Image of a contour plot.'
+  %}
 
 ## Parameter Learning
 
 ### Gradient Descent
   - We have:
-    1. An hypothesis function, h
-    2. A way to determine how well our hypothesis fits the data - the cost function, J
-  - _Gradient descent_ is a method for finding the minimum of J.
+    1. An hypothesis function, _h_
+    2. A way to determine how well our hypothesis fits the data - the cost function, _J_
+  - _Gradient descent_ is a method for finding the minimum of _J_.
 
   {%
      include margin_note_with_image.html
@@ -78,13 +83,16 @@ The following are my class notes for Andrew Ng's [machine learning course](https
      alt='Image of gradient descent in action.'
   %}
 
-  - GD works by taking the derivative of J.
+  - GD works by taking the derivative of _J_.
   - It follows the path of _steepest_ descent.
   - How quickly it converges can be controlled via the _learning rate_ parameter, α.
     - A larger α yields larger steps, while a smaller α yields smaller steps.
-    - The _direction_ of each step is based on the partial derivative of J.
-  - The GD algorithm is - _repeat until convergence_: θ<sub>j</sub> := θ<sub>j</sub> - α(∂/∂θ<sub>j</sub>)J(θ<sub>0</sub>, θ<sub>1</sub>, ..., θ<sub>n</sub>), where j ⊂ {0, 1, ..., n}, the feature index number.
-  - Before using GD, you must choose a starting point on J
+    - The _direction_ of each step is based on the partial derivative of _J_.
+  - The GD algorithm is - _repeat until convergence_: _θ<sub>j</sub> := θ<sub>j</sub> - α(∂/∂θ<sub>j</sub>)J(θ<sub>0</sub>, θ<sub>1</sub>, ..., θ<sub>n</sub>)_, where _j ⊂ {0, 1, ..., n}_, the feature index number.
+  {% include side_note.html
+     id="gd2"
+     note="Before using GD, you must choose a starting point on _J_"
+  %}
 
 ### Gradient Descent in Practice
   - The smaller the α, the longer GD will take. Choosing α too small may take forever.
