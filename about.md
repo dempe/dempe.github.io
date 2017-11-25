@@ -11,4 +11,4 @@ permalink: /about/
   </blockquote>
 </div>
 
-This site's title, <span lang="ja">{{ site.title | escape }}</span> (pronounced sho-sheen), is a Zen concept roughly translated as "beginner's mind."  It implies curiosity, openness, and approaching things without preconceptions.  It is the aim of this blog to survey a variety of topics, always through the eyes of a beginner.
+This site's title, <span lang="ja">{{ site.title | escape }}</span> (pronounced sho-sheen), is a Zen concept roughly translated as "beginner's mind."  It implies curiosity, openness, and approaching things without preconceptions.  It is the goal of this blog to explore a variety of new and interesting topics - always with the eyes of a beginner.
