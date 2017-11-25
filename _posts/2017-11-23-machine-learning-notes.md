@@ -3,7 +3,9 @@ layout: post
 title: "Machine Learning Notes"
 date: 2017-11-23 00:00:55
 tags: machine-learning
+excerpt: The following are my class notes for Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome) on [Coursera](https://www.coursera.org/) (with the occasional note supplemented from elsewhere).
 ---
+
 <span class="marginnote">Unless otherwise noted, the images are also taken from his course.</span>
 
 The following are my class notes for Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome) on [Coursera](https://www.coursera.org/) (with the occasional note supplemented from elsewhere).
