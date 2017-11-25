@@ -31,6 +31,8 @@ The following are my class notes for Andrew Ng's [machine learning course](https
   - Notation
     - _m_ = the number of training samples
     - _x<sup>(i)</sup>_ = the the input for the i<sup>th</sup> training sample
+    - _x<sup>(i)</sup>_ = the the input for the i<sup>th</sup> training sample
+    - _x<sup>(i)</sup>_ = the the input for the i<sup>th</sup> training sample
     - _y<sup>(i)</sup>_ = the the output for the i<sup>th</sup> training sample
     - _X_ = the space of input values
     - _Y_ = the space of output values
