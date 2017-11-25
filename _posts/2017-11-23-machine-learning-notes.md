@@ -36,7 +36,7 @@ The following are my class notes for Andrew Ng's [machine learning course](https
 ### Model Representation
 {%
    include margin_note_with_image.html
-   note='A learning algorithm takes in training data and determines the parameters that make the hypothesis most accurately predict a value in Y given a value in X.'
+   note='A learning algorithm takes in training data and determines the parameters that make the hypothesis most accurately predict a value in Y. given a value in X.'
    src='/img/model.png'
    alt='Image of how the hypothesis function works with the training data'
 %}
@@ -67,12 +67,16 @@ The following are my class notes for Andrew Ng's [machine learning course](https
     1. An hypothesis function, h
     2. A way to determine how well our hypothesis fits the data - the cost function, J
   - _Gradient descent_ is a method for finding the minimum of J.
+
+  {%
+     include margin_note_with_image.html
+     note='Gradient descent finds a minimum of the cost function by taking the path of steepest descent.'
+     src='/img/gradient_descent.png'
+     alt='Image of gradient descent in action.'
+  %}
+
   - GD works by taking the derivative of J.
   - It follows the path of _steepest_ descent.
-  <span class="marginnote">
-    <img src="/img/gradient_descent.png" alt="Image of gradient descent in action.">
-    Gradient descent finds a minimum of the cost function by taking the path of steepest descent.
-  </span>
   - How quickly it converges can be controlled via the _learning rate_ parameter, α.
     - A larger α yields larger steps, while a smaller α yields smaller steps.
     - The _direction_ of each step is based on the partial derivative of J.
