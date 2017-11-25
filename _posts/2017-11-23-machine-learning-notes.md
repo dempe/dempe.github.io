@@ -105,7 +105,7 @@ The following are my class notes for Andrew Ng's [machine learning course](https
     - _repeat until convergence_:
       - _θ<sub>0</sub> := (α/2m) * ∑<sub>i=0;m</sub>(h<sub>θ</sub>(x<sub>i</sub>) - h<sub>i</sub>)_
       - _θ<sub>1</sub> := (α/2m) * ∑<sub>i=0;m</sub>((h<sub>θ</sub>(x<sub>i</sub>) - h<sub>i</sub>)x<sub>i</sub>)_
-  - GD for linear regression has no local optima; only a global minimum, and, thus, should always converge assuming the learning rate, α, is not too large.
+  - GD for linear regression has no local optima; only a global minimum, and, thus, should always converge assuming the learning rate, _α_, is not too large.
   - This form of GD is called "batch gradient descent", since it looks at all the training examples at once.
 
 ## Multivariate Linear Regression
@@ -118,13 +118,13 @@ The following are my class notes for Andrew Ng's [machine learning course](https
   - _n_ = the number of features
 - The multivariate form of the hypothesis function is _h<sub>θ</sub>(x) = θ<sub>0</sub> + θ<sub>1</sub>x<sub>1</sub> + ... θ<sub>n</sub>x<sub>n</sub>_
 - In an example for predicting a species' population,
-  - θ<sub>0</sub> would be the base population
-  - θ<sub>1</sub> might be the population per predator
-  - θ<sub>2</sub> might be the population per food source
-  - Given θ<sub>1</sub> is the population per predator, x<sub>1</sub> would be the number of predators
-  - Given θ<sub>2</sub> is the population per food source, x<sub>2</sub> would be the number of food sources
+  - _θ<sub>0</sub>_ would be the base population
+  - _θ<sub>1</sub>_ might be the population per predator
+  - _θ<sub>2</sub>_ might be the population per food source
+  - Given _θ<sub>1</sub>_ is the population per predator, _x<sub>1</sub>_ would be the number of predators
+  - Given _θ<sub>2</sub>_ is the population per food source, _x<sub>2</sub>_ would be the number of food sources
 - The multivariate hypothesis function can be expressed in vectors like so _h<sub>θ</sub>(x) = [θ<sub>0</sub> θ<sub>1</sub> ... θ<sub>n</sub>]<sup>T</sup> [x<sub>0</sub> x<sub>1</sub> ... x<sub>n</sub>] = θ<sup>T</sup>x_
   - This is for one training example
-  - This assumes x<sub>0</sub> = 1 for convenience so that both vectors have the same length and can thus be multiplied
+  - This assumes _x<sub>0</sub> = 1_ for convenience so that both vectors have the same length and can thus be multiplied
 
 ### Gradient Descent for Multiple Variables
