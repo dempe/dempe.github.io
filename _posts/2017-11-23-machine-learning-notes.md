@@ -53,8 +53,11 @@ The following are my class notes for Andrew Ng's [machine learning course](https
 
 ### Cost Function
   - A cost function measures the efficiency of an hypothesis function.
-  - A cost function, _J(θ<sub>0</sub>,θ<sub>1</sub>) = 1/2m * ∑<sub>i=0;m</sub>(h<sub>θ</sub>(x<sub>i</sub>) - h<sub>i</sub>)<sup>2</sup>_, is a sum, for each training sample, of mean square errors (predicted - actual) divided by two<label for="sn-gd" class="margin-toggle sidenote-number"></label>.
-  <span class="sidenote">For ease of gradient descent calculation (i.e., when differentiated, the 1/2 cancels out).</span>
+  - A cost function, _J(θ<sub>0</sub>,θ<sub>1</sub>) = 1/2m * ∑<sub>i=0;m</sub>(h<sub>θ</sub>(x<sub>i</sub>) - h<sub>i</sub>)<sup>2</sup>_, is a sum, for each training sample, of mean square errors (predicted - actual) divided by two
+  {% include side_note.html
+     id="gd"
+     note="For ease of gradient descent calculation (i.e., when differentiated, the 1/2 cancels out)."
+  %}.
   - The goal is to minimize the cost function, _J(θ<sub>0</sub>, θ<sub>1</sub>)_ by tweaking the parameters, θ<sub>0</sub> and θ<sub>1</sub>, to the hypothesis function, _h<sub>θ</sub>(x) = θ<sub>0</sub> + θ<sub>1</sub>x_.
   - The cost function essentially maps the parameters, _θ<sub>0</sub>, θ<sub>1</sub>_, of a model to a number.
   - We want to find the global minimum of _J(θ<sub>0</sub>, θ<sub>1</sub>)_
