@@ -66,7 +66,7 @@ A _cost function_{% include side_note.html
   %} measures the efficiency of an hypothesis function. It is a sum, for each training sample, of mean square errors (predicted - actual) divided by two
 {% include side_note.html
    id="gd"
-   note="For ease of gradient descent calculation (i.e., when differentiated, the \\(\frac{1}{2}\\) cancels out)."
+   note="For ease of differentiation (i.e., when differentiated, the \\(\frac{1}{2}\\) cancels out)."
 %}. The goal is to _minimize_ the cost function, \\(J(θ_{0}, θ_{1})\\), by tweaking the parameters, \\(θ_{0}\\) and \\(θ_{1}\\), to the hypothesis function, \\(h_{θ}(x) = θ_{0} + θ_{1}x\\).
 
 {%
@@ -90,11 +90,11 @@ We now have _two_ tools in our toolbelt: __1.__ an hypothesis function, \\(h\\),
    alt='Image of gradient descent in action.'
 %}
 
-_Gradient descent_ is a method for finding the minimum of \\(J\\). GD works by taking the derivative of \\(J\\) and following the path of _steepest_ descent to _a_ minimum (point where the derivative is zero).
+_Gradient descent_ is a method for finding the minimum of \\(J\\). Gradient descent works by taking the derivative of \\(J\\) and following the path of _steepest_ descent to _a_ minimum (point where the derivative is zero).
 
 How quickly gradient descent converges can be controlled via the _learning rate_ parameter, \\(α\\). A larger \\(α\\) yields larger steps, while a smaller \\(α\\) yields smaller steps. The _direction_ of each step is based on the partial derivative of \\(J\\).
 
-Formally, the GD algorithm is
+The gradient descent algorithm is
 
 _repeat until convergence_:
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{j} := θ_{j} - α(\frac{∂}{∂θ_{j}})J(θ_{0}, θ_{1}, ..., θ_{n})\\)
@@ -102,24 +102,24 @@ _repeat until convergence_:
 where \\(j ⊂ \\{0, 1, ..., n\\}\\), the feature index number.
 {% include side_note.html
    id="gd2"
-   note="Before using GD, you must choose a starting point on \\(J\\)."
+   note="Before using gradient descent, you must choose a starting point on \\(J\\)."
 %}
 
 ### Gradient Descent in Practice
-The smaller the learning rate, \\(α\\), the longer GD will take. Choosing α too small may take forever. Choosing α too large, GD may not converge or may even _diverge_ as it will overshoot the minimum. As GD approaches a minimum, steps get smaller and smaller (even with a fixed \\(α\\), because the derivative is approaching 0.
+The smaller the learning rate, \\(α\\), the longer gradient descent will take. Choosing α too small may take forever. Choosing α too large, gradient descent may not converge or may even _diverge_ as it will overshoot the minimum. As gradient descent approaches a minimum, steps get smaller and smaller (even with a fixed \\(α\\), because the derivative is approaching 0).
 
-Another drawback is that GD can find a local minimum rather than the true minimum.
+Another drawback is that gradient descent can find a local minimum rather than the true minimum.
 
 ### Gradient Descent for Linear Regression
-By taking the partial derivate of the cost function for linear regression, we obtain the GD algorithm  {% include side_note.html
+By taking the partial derivate of the cost function for linear regression, we obtain the gradient descent algorithm  {% include side_note.html
      id="gd3"
-     note='This form of GD is called "batch gradient descent", since it looks at all the training examples at once.'%} for linear regression:
+     note='This form of gradient descent is called "batch gradient descent", since it looks at all the training examples at once.'%} for linear regression:
 
 _repeat until convergence_:
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{0} := \frac{α}{2m}\displaystyle\sum_{i=0}^{m}(h_{θ}(x_{i}) - h_{i})\\)
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{1} := \frac{α}{2m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - h_{i})x_{i})\\)
 
-GD for linear regression has no local optima; only a global minimum, and, thus, should always converge assuming the learning rate, _α_, is not too large.
+Gradient descent for linear regression has no local optima; only a global minimum, and, thus, should always converge assuming the learning rate, _α_, is not too large.
 
 ## Multivariate Linear Regression
 
