@@ -47,11 +47,11 @@ There are two broad categories of machine learning algorithms: _supervised_ and 
 %}
 
 Notation:
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(m\\) = the number of training samples
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(x^{(i)}\\) = the the input for the \\(i^{th}\\) training sample
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(y^{(i)}\\) = the the output for the \\(i^{th}\\) training sample
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(X\\) = the space of input values
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(Y\\) = the space of output values
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(m =\\) the number of training samples
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(x^{(i)} =\\) the the input for the \\(i^{th}\\) training sample
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(y^{(i)} =\\) the the output for the \\(i^{th}\\) training sample
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(X =\\) the space of input values
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(Y =\\) the space of output values
 
 The goal is to determine an "hypothesis" function, \\(h: X -> Y\\), that will serve as our model and allow us to predict values in \\(Y\\) given values in \\(X\\).
 
@@ -117,10 +117,10 @@ GD for linear regression has no local optima; only a global minimum, and, thus, 
 
 ### Multiple Features
 Notation:
-<br/>\\(x^{(i)}_{j} =\\) the value of the \\(j^{th}\\) feature of the \\(i^{th}\\) training sample
-<br/>\\(x^{(i)} =\\) the input features of the \\(i^{th}\\) training sample
-<br/>\\(m =\\) the number of training examples
-<br/>\\(n =\\) the number of features
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(x^{(i)}_{j} =\\) the value of the \\(j^{th}\\) feature of the \\(i^{th}\\) training sample
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(x^{(i)} =\\) the input features of the \\(i^{th}\\) training sample
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(m =\\) the number of training examples
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(n =\\) the number of features
 
 With this notation, the multivariate form of the hypothesis function is then ...<br/> \\(h_{θ}(x) = θ_{0} + θ_{1}x_{1} + ... θ_{n}x_{n}\\).
 {% include side_note.html
