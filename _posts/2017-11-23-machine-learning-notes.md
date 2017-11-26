@@ -46,15 +46,16 @@ There are two broad categories of machine learning algorithms: _supervised_ and 
    alt='Image of how the hypothesis function works with the training data'
 %}
 
-  - Notation
-    - _m_ = the number of training samples
-    - _x<sup>(i)</sup>_ = the the input for the _i<sup>th</sup>_ training sample
-    - _x<sup>(i)</sup>_ = the the input for the _i<sup>th</sup>_ training sample
-    - _x<sup>(i)</sup>_ = the the input for the _i<sup>th</sup>_ training sample
-    - _y<sup>(i)</sup>_ = the the output for the _i<sup>th</sup>_ training sample
-    - _X_ = the space of input values
-    - _Y_ = the space of output values
-  - The goal is to determine an "hypothesis" function, _h: X -> Y_
+Notation
+<br/>&nbsp;&nbsp;&nbsp;&nbsp; _m_ = the number of training samples
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;_x<sup>(i)</sup>_ = the the input for the _i<sup>th</sup>_ training sample
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;_x<sup>(i)</sup>_ = the the input for the _i<sup>th</sup>_ training sample
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;_x<sup>(i)</sup>_ = the the input for the _i<sup>th</sup>_ training sample
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;_y<sup>(i)</sup>_ = the the output for the _i<sup>th</sup>_ training sample
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;_X_ = the space of input values
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;_Y_ = the space of output values
+
+The goal is to determine an "hypothesis" function, _h: X -> Y_, that will serve as our model and allow us to predict values in _Y_ given values in _X_.
 
 ### Cost Function
   A _cost function_{% include side_note.html
