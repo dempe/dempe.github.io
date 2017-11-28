@@ -101,7 +101,7 @@ The gradient descent algorithm is
 _repeat until convergence_:
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{j} := θ_{j} - α(\frac{∂}{∂θ_{j}})J(θ_{0}, θ_{1}, ..., θ_{n})\\)
 
-where \\(j ⊂ \\{0, 1, ..., n\\}\\), the feature index number.
+where \\(j \in \\{0, 1, ..., n\\}\\), the feature index number.
 {% include side_note.html
    id="gd2"
    note="Before using gradient descent, you must choose a starting point on \\(J\\)."
