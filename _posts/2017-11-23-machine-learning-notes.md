@@ -118,8 +118,8 @@ By taking the partial derivate of the cost function for linear regression, we ob
      note='This form of gradient descent is called "batch gradient descent", since it looks at all the training examples at once.'%} for linear regression:
 
  _repeat until convergence_:
- <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{0} := θ_{0} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}(h_{θ}(x_{i}) - h_{i})\\)
- <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{1} := θ_{1} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - h_{i})x_{i})\\)
+ <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{0} := θ_{0} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}(h_{θ}(x_{i}) - y_{i})\\)
+ <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{1} := θ_{1} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - y_{i})x_{i})\\)
 
 Gradient descent for linear regression has no local optima; only a global minimum, and, thus, should always converge assuming the learning rate, _α_, is not too large.
 
@@ -172,19 +172,19 @@ Note that instead of thinking of the parameters as a series of \\(n + 1\\) separ
 Remember that gradient descent for linear regression was:
 
 _repeat until convergence_:
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{0} := θ_{0} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}(h_{θ}(x_{i}) - h_{i})\\)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{1} := θ_{1} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - h_{i})x_{i})\\)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{0} := θ_{0} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}(h_{θ}(x_{i}) - y_{i})\\)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{1} := θ_{1} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - y_{i})x_{i})\\)
 
 If we assume that \\(x_{0} = 1\\), then it can be rewritten like so:
 
 _repeat until convergence_:
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{0} := θ_{0} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - h_{i})x_{0}^{(i)})\\)
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{1} := θ_{1} - α\frac{1}{1m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - h_{i})x_{1}^{(i)})\\)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{0} := θ_{0} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - y_{i})x_{0}^{(i)})\\)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{1} := θ_{1} - α\frac{1}{1m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - y_{i})x_{1}^{(i)})\\)
 
 We then arrive at a genericized form of gradient descent for multiple variables:
 
 _repeat until convergence_:
-<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{j} := θ_{j} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - h_{i})x_{j}^{(i)})\\)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{j} := θ_{j} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - y_{i})x_{j}^{(i)})\\)
 
 Which can be rewritten as:
 
