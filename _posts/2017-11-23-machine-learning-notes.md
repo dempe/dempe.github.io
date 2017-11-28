@@ -190,3 +190,17 @@ The \\(\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - y_{i})x_{j}^{(i)}
 
 _repeat until convergence_:
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{j} := θ_{j} - α(\frac{∂}{∂θ_{j}})J(θ)\\)
+
+### Gradient Descent in Practice I: Feature Scaling
+
+When our model has multiple features, each of these features may take on very different ranges.  For example, in predicting housing prices, \\(θ_{1}\\) may represent square feet and range from 500 to 2500 while \\(θ_{2}\\) may represent the number of bedrooms and range from 1 to 5.  These drastically different ranges will result in a skewed, oval-shaped cost function.  Gradient descent performs very poorly on such a cost function.
+
+To ameliorate this, we can use _feature scaling_.  Feature scaling simply divides each feature by its maximum value.  For a feature, \\(x_{i}\\), that ranges from 500 to 2500, we would just divide by 2500.  This would reduce the range of that feature from .2 to 1.
+
+Another option that we can use to reduce the skewness of the cost function is _mean normalization_.  Mean normalization subtracts from each feature its mean and divides by its range.{% include side_note.html
+     id="mean-normalization"
+     note='Optionally, standard deviation can be used as well.'%}  For a feature that ranges from 500 to 2500 with an average of 1500, the mean normalized feature would be \\(\frac{x_{i} - 1500}{2000}\\).{% include side_note.html
+          id="mean-normalization2"
+          note='Formally, \\(\frac{x_{i} - u_{i}}{s_{i}}\\)'%}
+
+Whatever you choose, ideally, your normalized features should lie within the range \\(-1 \leq x_{i} \leq 1\\). Realistically, anything within the range \\(-3 \leq x_{i} \leq 3\\) is fine.
