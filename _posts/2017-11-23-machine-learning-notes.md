@@ -186,7 +186,7 @@ We then arrive at a genericized form of gradient descent for multiple variables:
 _repeat until convergence_:
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{j} := θ_{j} - α\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - y_{i})x_{j}^{(i)})\\)
 
-Which can be rewritten as:
+The \\(\frac{1}{m}\displaystyle\sum_{i=0}^{m}((h_{θ}(x_{i}) - y_{i})x_{j}^{(i)})\\) portion is just the partial derivative of the cost function, so the algorithm can be more compactly written as:
 
 _repeat until convergence_:
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{j} := θ_{j} - α(\frac{∂}{∂θ_{j}})J(θ)\\)
