@@ -13,6 +13,8 @@ excerpt: The following are my class notes for Andrew Ng's [machine learning cour
 
 The following are my class notes for Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome) on [Coursera](https://www.coursera.org/) (with the occasional note supplemented from elsewhere).
 
+I started typing this up to keep up with the course material.  They are a work in progress.
+
 ## Introduction
 
 ### Definitions
@@ -157,4 +159,15 @@ In an example for predicting a species' population,
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;- Given \\(θ_{1}\\) is the population per predator, \\(x_{1}\\) would be the number of predators
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;- Given \\(θ_{2}\\) is the population per food source, \\(x_{2}\\) would be the number of food sources
 
+To summarize, we have:
+
+1. The multivariate hypothesis function, \\(h_{θ}(x) = θ^{T}x = θ_{0}x_{0} + θ_{1}x_{1} + ... θ_{n}x_{n}\\) (where \\(x_{0} = 1\\))
+2. For the parameters, \\(θ_{0}, θ_{1}, ..., θ_{n}\\)
+3. With the corresponding cost function, \\(J(θ_{0}, θ_{1}, ..., θ_{n}) = \frac{1}{2m}\displaystyle\sum_{i=0}^{m}(h_{θ}(x_{i}) - h_{i})^{2}\\)
+
+Note that instead of thinking of the parameters as a series of \\(n + 1\\) separate variables, we can think of it as an \\(n + 1\\) dimensional vector, \\(θ\\). The cost function then becomes \\(J(θ)\\). This will make for easier notation.
+
 ### Gradient Descent for Multiple Variables
+
+_repeat until convergence_:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(θ_{j} := θ_{j} - α(\frac{∂}{∂θ_{j}})J(θ)\\)
