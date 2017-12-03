@@ -11,7 +11,7 @@ excerpt: The following are my class notes for Andrew Ng's [machine learning cour
    note="Unless otherwise noted, the images are also taken from his course."
 %}
 
-The following are my class notes for Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome) on [Coursera](https://www.coursera.org/) (with the occasional note supplemented from elsewhere).
+{{ page.excerpt | markdownify }}
 
 I started typing this up to keep up with the course material.  They are a work in progress.
 
