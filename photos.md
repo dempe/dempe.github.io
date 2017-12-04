@@ -4,22 +4,40 @@ title: Personal Photography
 permalink: /photos/
 ---
 
-Everyone's an amateur photographer these days. This is my attempt.
-<br/><br/><br/><br/>
-
-
-## The Tiki Man
+Because everyone's an amateur photographer these days ¯\\\_(ツ)\_/¯
+<br/><br/>
 
 {%
    include figure.html
    src="/img/photos/tiki_man.jpg"
-   alt="Photo of Tiki."
 %}
-
-## Man Holding Large Iron Rod
 
 {%
    include figure.html
    src="/img/photos/graffiti.jpg"
-   alt="Photo of Man Holding Large Iron Rod."
+%}
+
+{%
+   include figure.html
+   src="/img/photos/late_night.jpg"
+%}
+
+{%
+   include figure.html
+   src="/img/photos/alleyway.jpg"
+%}
+
+{%
+   include figure.html
+   src="/img/photos/moonrise.jpg"
+%}
+
+{%
+   include figure.html
+   src="/img/photos/moped.jpg"
+%}
+
+{%
+   include figure.html
+   src="/img/photos/mediterranean_food.jpg"
 %}
