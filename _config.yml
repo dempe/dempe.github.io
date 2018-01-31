@@ -1,12 +1,10 @@
 title: 初心
 email: chrisdempewolf@protonmail.com
 description: Forever in search of the farther shore.
-baseurl: ""
 url: "http://chrisdempewolf.com"
 github_username:  dempe
 permalink: /:title.html
 markdown: kramdown
-theme: minima
 safe: true
 timezone: America/Los_Angeles
 encoding: utf-8
