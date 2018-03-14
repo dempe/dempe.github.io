@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Gradient Descent"
+title: "What is Gradient Descent"
 date: 2018-03-14 00:00:02
 tags: machine-learning
-excerpt: The following is an overview of gradient descent.
+excerpt: none
 ---
 
 ## Parameter Learning - Gradient Descent

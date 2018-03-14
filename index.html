@@ -10,7 +10,9 @@ layout: default
           <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
         </h2>
         {% include post_meta.html %}
-        <p>{{ page.excerpt | markdownify }}</p>
+        {% if page.excerpt != "none" %}
+          <p>{{ page.excerpt | markdownify }}</p>
+        {% endif %}
       </li>
     {% endfor %}
   </ul>

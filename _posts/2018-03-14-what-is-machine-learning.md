@@ -3,7 +3,7 @@ layout: post
 title: "What is Machine Learning"
 date: 2018-03-14 00:00:00
 tags: machine-learning
-excerpt: Here are some definitions and types of machine learning.
+excerpt: none
 ---
 
 ## Definitions

@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Multivariate Linear Regression"
+title: "What is Multivariate Linear Regression"
 date: 2018-03-14 00:00:03
 tags: machine-learning
-excerpt: The following is an overview of multivariate linear regression.
+excerpt: none
 ---
 
 ## Multiple Features
