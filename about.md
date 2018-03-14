@@ -2,6 +2,7 @@
 layout: page
 title: About
 permalink: /about/
+display: true
 ---
 
 <div class="epigraph">

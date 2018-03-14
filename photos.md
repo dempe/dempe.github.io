@@ -2,6 +2,7 @@
 layout: page
 title: Personal Photography
 permalink: /photos/
+display: false
 ---
 
 Because everyone's an amateur photographer these days ¯\\\_(ツ)\_/¯
