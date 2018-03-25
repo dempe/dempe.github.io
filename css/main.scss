@@ -161,6 +161,7 @@ article
 {
   position: relative;
   padding: 5rem 0rem;
+  margin-bottom: 50px;
 }
 
 section
@@ -356,9 +357,26 @@ img
   position: relative;
 }
 
+.footnote
+{
+  float:left;
+  clear: both;
+  width: 80%;
+  margin-top: 1em;
+  margin-bottom: 0em;
+  line-height: 1.3;
+  vertical-align: baseline;
+  position: relative;
+}
+
 .sidenote-number
 {
   counter-increment: sidenote-counter;
+}
+
+.footnote-number
+{
+  counter-increment: footnote-counter;
 }
 
 .sidenote-number:after,
@@ -376,6 +394,17 @@ img
   font-size: 1rem;
   top: -0.5rem;
   left: 0.1rem;
+}
+
+.footnote-number:after
+{
+  content: "[" counter(footnote-counter) "]";
+  font-size: 1rem;
+  top: -0.5rem;
+  left: 0.1rem;
+  font-family: et-book-roman-old-style;
+  position: relative;
+  vertical-align: baseline;
 }
 
 .sidenote:before
@@ -667,7 +696,7 @@ body
     border-top: 1px solid $midground-color;
     padding: 30px 0;
     font-style: italic;
-    margin-top: 100px;
+    margin-top: 10px;
 }
 
 .page-content
@@ -704,9 +733,11 @@ body
 
 .post-meta
 {
+  clear: both;
     margin-top: 1px;
     font-size: 16px * 0.875;
     color: $midground-color;
+    float: left;
 }
 
 .post-list,
