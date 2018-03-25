@@ -26,8 +26,8 @@ display: true
    alt='Image of me eating a durian for the first time in Bangkok.'
 %}
 
-I'm Chris Dempewolf, yet another software engineer (YASE) based in Seattle. I set up this blog with the primary purpose of exploring my thoughts and my interests via writing. My interests err on the side of breadth rather than depth, but a few of my biggest are biology, computation, and culture.
+I'm Chris Dempewolf, [yet another](https://en.wikipedia.org/wiki/Yet_another) software engineer (YASE) based in Seattle. I set up this blog primarily to explore my thoughts and interests via writing. My interests err on the side of breadth rather than depth, so expect posts on a wide variety of subjects scientific, opinionated, or speculative.
 
-This site's title, <span lang="ja">{{ site.title | escape }}</span> (pronounced sho-sheen), is a Zen concept roughly translated as "beginner's mind."  It implies curiosity, openness, and approaching things without preconceptions.  It is the goal of this blog to explore a variety of new and interesting topics - always through the eyes of a beginner.
+This site's title, <span lang="ja">{{ site.title | escape }}</span> (pronounced sho-sheen), is a Zen concept roughly translated as "beginner's mind."  It implies curiosity, openness, and approaching things without preconceptions.  It is the goal of this blog to explore many new and interesting topics - always through the eyes of a beginner.
 
-Thanks for visiting.  You can reach me at chrisdempewolf at protonmail dot com.
+Thanks for visiting.  You can reach me at <a href="mailto:chrisdempewolf@protonmail.com">chrisdempewolf@protonmail.com</a>.
