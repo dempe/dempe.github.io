@@ -2,11 +2,12 @@
 layout: post
 title: "Model and Cost Function"
 date: 2018-03-14 00:00:01
+updated: none
 tags: machine-learning
-excerpt: The following are my notes on the model and cost function section of Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome).
+excerpt: These are my notes on the model and cost function section of Andrew Ng's [machine learning course](https://www.coursera.org/learn/machine-learning/home/welcome).
 ---
 
-## Model Representation
+### Model Representation
 {%
    include margin_note_with_image.html
    note='A learning algorithm receives training data and determines the parameters that make the hypothesis most accurately predict a value in \\(Y\\) given a value in \\(X\\).'
@@ -23,7 +24,7 @@ Notation:
 
 The goal is to determine an "hypothesis" function, \\(h: X -> Y\\), that will serve as our model and allow us to predict values in \\(Y\\) given values in \\(X\\).
 
-## Cost Function
+### Cost Function
 A _cost function_{% include side_note.html
      id="cost-function"
      note="Formally, \\(J(θ_{0},θ_{1}) = \frac{1}{2m}\displaystyle\sum_{i=0}^{m}(h_{θ}(x_{i}) - h_{i})^{2}\\)"

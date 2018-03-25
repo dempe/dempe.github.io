@@ -665,6 +665,7 @@ body
 .post-list p
 {
   width: 100%;
+  margin: 0;
 }
 
 .home .marginnote,
@@ -678,6 +679,7 @@ body
   border-bottom: 1px solid $midground-color;
   min-height: 56px;
   margin: 0px;
+  margin-bottom: 40px;
 }
 
 .site-footer
@@ -724,7 +726,12 @@ body
   margin-bottom: 0px;
   font-size: 16px * 0.875;
   color: $midground-color;
-  float: left;
+}
+
+.page-content > .post-meta
+{
+  float:left;
+  clear:both
 }
 
 .post-list,

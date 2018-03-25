@@ -2,11 +2,12 @@
 layout: post
 title: "What is Machine Learning"
 date: 2018-03-14 00:00:00
+updated: none
 tags: machine-learning
-excerpt: none
+excerpt: Let's define machine learning and look at some examples.
 ---
 
-## Definitions
+### Definitions
 A hand wavey definition of _machine learning_ is teaching a computer to learn without explicitly programming it.
 
 A more exact definition of _machine learning_ is when a computer improves in task, _T_, based on experience, _E_, measured in performance, _P_.
@@ -21,7 +22,7 @@ Here's another way of looking at machine learning: whereas classical programs ta
      note="See [_Deep Learning with Python_](https://www.manning.com/books/deep-learning-with-python?a_aid=keras&a_bid=76564dff)."
 %}
 
-## Types of Machine Learning
+### Types of Machine Learning
 There are two broad categories of machine learning algorithms: _supervised_ and _unsupervised_; each with two sub-categories.
 
 - A _supervised_ algorithm is given a set of correct or known answers (labeled data) and tasked with predicting the output of new, unseen data.

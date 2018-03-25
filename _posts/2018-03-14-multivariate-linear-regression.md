@@ -1,12 +1,14 @@
 ---
 layout: post
-title: "What is Multivariate Linear Regression"
+title: "What is Linear Regression"
 date: 2018-03-14 00:00:03
+updated: none
 tags: machine-learning
 excerpt: none
 ---
 
-## Multiple Features
+### Multiple Features
+Linear regression with multiple features is known as multivariate linear regression.
 Notation:
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(x^{(i)}_{j} =\\) the value of the \\(j^{th}\\) feature of the \\(i^{th}\\) training sample
 <br/>&nbsp;&nbsp;&nbsp;&nbsp;\\(x^{(i)} =\\) the input features of the \\(i^{th}\\) training sample

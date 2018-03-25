@@ -1,6 +1,10 @@
 {% assign num_tags_with_comma = page.tags.size | minus: 2 %}
 {% assign last_tag_index = page.tags.size | minus: 1 %}
-<span class="post-meta">{{ page.date | date: "%B %d, %Y" }} |
+<span class="post-meta">
+  Published {{ page.date | date: "%B %d, %Y" }} |
+  {% if page.updated != "none" %}
+    Updated {{ page.updated | date: "%B %d, %Y" }} |
+  {% endif %}
   {% for i in (0..num_tags_with_comma) %}
   <a href="/topics/#{{ tag | slugify }}"> {{ page.tags[i] }}</a>,
   {% endfor %}

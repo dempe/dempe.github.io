@@ -2,8 +2,9 @@
 layout: post
 title: "What is Gradient Descent"
 date: 2018-03-14 00:00:02
+updated: none
 tags: machine-learning
-excerpt: none
+excerpt: Get familiar with one the most common machine learning algorithms.
 ---
 
 ## Parameter Learning - Gradient Descent
