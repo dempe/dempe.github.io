@@ -383,6 +383,14 @@ img
   vertical-align: baseline;
 }
 
+.footnote::after {
+  content: "]"
+}
+
+.footnote::before {
+  content: "["
+}
+
 .sidenote-number:after
 {
   content: counter(sidenote-counter);
