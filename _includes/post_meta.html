@@ -6,7 +6,7 @@
     Updated {{ page.updated | date: "%B %d, %Y" }} |
   {% endif %}
   {% for i in (0..num_tags_with_comma) %}
-  <a href="/topics/#{{ tag | slugify }}"> {{ page.tags[i] }}</a>,
+  <a class="post-meta-link" href="/topics/#{{ tag | slugify }}"> {{ page.tags[i] }}</a>,
   {% endfor %}
-  <a href="/topics/#{{ tag | slugify }}"> {{ page.tags[last_tag_index] }} </a>
+  <a class="post-meta-link" href="/topics/#{{ tag | slugify }}"> {{ page.tags[last_tag_index] }} </a>
 </span>
