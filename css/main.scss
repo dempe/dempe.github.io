@@ -283,38 +283,38 @@ figure.fullwidth figcaption
 }
 
 /* Links: replicate underline that clears descenders */
-a:link:not(.site-title),
+a:link,
 a:visited
 {
   color: inherit;
   width: auto;
 }
 
-.post-meta a {
-  text-decoration: none;
-  background: -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($midground-color, $midground-color);
-  background: linear-gradient($background-color, $background-color), linear-gradient($background-color, $background-color), linear-gradient($midground-color, $midground-color);
-  -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  text-shadow: 0.03em 0 $background-color, -0.03em 0 $background-color, 0 0.03em $background-color, 0 -0.03em $background-color, 0.06em 0 $background-color, -0.06em 0 $background-color, 0.09em 0 $background-color, -0.09em 0 $background-color, 0.12em 0 $background-color, -0.12em 0 $background-color, 0.15em 0 $background-color, -0.15em 0 $background-color;
-  background-position: 0% 93%, 100% 93%, 0% 93%;
-}
-
-a:link:not(.site-title):not(.post-link):not(.post-meta a),
-.post-link:hover
-{
-  text-decoration: none;
-  background: -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($foreground-color, $foreground-color);
-  background: linear-gradient($background-color, $background-color), linear-gradient($background-color, $background-color), linear-gradient($foreground-color, $foreground-color);
-  -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
-  background-repeat: no-repeat, no-repeat, repeat-x;
-  text-shadow: 0.03em 0 $background-color, -0.03em 0 $background-color, 0 0.03em $background-color, 0 -0.03em $background-color, 0.06em 0 $background-color, -0.06em 0 $background-color, 0.09em 0 $background-color, -0.09em 0 $background-color, 0.12em 0 $background-color, -0.12em 0 $background-color, 0.15em 0 $background-color, -0.15em 0 $background-color;
-  background-position: 0% 93%, 100% 93%, 0% 93%;
-}
+// .post-meta a {
+//   text-decoration: none;
+//   background: -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($midground-color, $midground-color);
+//   background: linear-gradient($background-color, $background-color), linear-gradient($background-color, $background-color), linear-gradient($midground-color, $midground-color);
+//   -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+//   -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+//   background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+//   background-repeat: no-repeat, no-repeat, repeat-x;
+//   text-shadow: 0.03em 0 $background-color, -0.03em 0 $background-color, 0 0.03em $background-color, 0 -0.03em $background-color, 0.06em 0 $background-color, -0.06em 0 $background-color, 0.09em 0 $background-color, -0.09em 0 $background-color, 0.12em 0 $background-color, -0.12em 0 $background-color, 0.15em 0 $background-color, -0.15em 0 $background-color;
+//   background-position: 0% 93%, 100% 93%, 0% 93%;
+// }
+//
+// a:link:not(.site-title):not(.post-meta a),
+// .post-link:hover
+// {
+//   text-decoration: none;
+//   background: -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($foreground-color, $foreground-color);
+//   background: linear-gradient($background-color, $background-color), linear-gradient($background-color, $background-color), linear-gradient($foreground-color, $foreground-color);
+//   -webkit-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+//   -moz-background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+//   background-size: 0.05em 1px, 0.05em 1px, 1px 1px;
+//   background-repeat: no-repeat, no-repeat, repeat-x;
+//   text-shadow: 0.03em 0 $background-color, -0.03em 0 $background-color, 0 0.03em $background-color, 0 -0.03em $background-color, 0.06em 0 $background-color, -0.06em 0 $background-color, 0.09em 0 $background-color, -0.09em 0 $background-color, 0.12em 0 $background-color, -0.12em 0 $background-color, 0.15em 0 $background-color, -0.15em 0 $background-color;
+//   background-position: 0% 93%, 100% 93%, 0% 93%;
+// }
 
 @media screen and (-webkit-min-device-pixel-ratio: 0)
 {
