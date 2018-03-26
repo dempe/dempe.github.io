@@ -1,8 +1,21 @@
 image: ruby:2.5
 
-pages:
-  script:
+before_script:
   - bundle install
+  
+test:
+  stage: test
+  script:
+  - bundle exec jekyll build -d test
+  artifacts:
+    paths:
+    - test
+  except:
+  - master
+
+pages:
+  stage: deploy
+  script:
   - bundle exec jekyll build -d public
   artifacts:
     paths:
