@@ -24,6 +24,7 @@ test:
 pages:
   stage: deploy
   script:
+  - gitbook build . public # build to public path
   - bundle exec jekyll build -v -d public
   artifacts:
     paths:
