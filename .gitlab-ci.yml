@@ -9,7 +9,7 @@ cache:
     - vendor/
     
 before_script:
-  - bundle install
+  - bundle install --path vendor
 
 test:
   stage: test
