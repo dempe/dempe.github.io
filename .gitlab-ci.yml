@@ -1,33 +1,7 @@
-image: ruby:2.3
-
-variables:
-  JEKYLL_ENV: production
-
-# add bundle cache to 'vendor' for speeding up builds
-cache:
-  paths: 
-    - vendor/
-    
-before_script:
-  - bundle install --path vendor
-
-test:
-  stage: test
-  script:
-  - bundle exec jekyll build -d test
-  artifacts:
-    paths:
-    - test
-  except:
-  - master
-
 pages:
-  stage: deploy
   script:
-  - gitbook build . public # build to public path
-  - bundle exec jekyll build -v -d public
+  - bundle install
+  - bundle exec jekyll build -d public
   artifacts:
     paths:
     - public
-  only:
-  - master
