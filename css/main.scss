@@ -291,7 +291,7 @@ a:visited
   width: auto;
 }
 
-a:link:not(.site-title):not(.post-meta-link),
+a:link:not(.site-title):not(.post-meta-link):not(.footnote):not(.reversefootnote),
 {
   text-decoration: none;
   background: -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($background-color, $background-color), -webkit-linear-gradient($foreground-color, $foreground-color);
@@ -384,12 +384,20 @@ img
   vertical-align: baseline;
 }
 
-.footnote::after {
+.footnote::after
+{
   content: "]"
 }
 
-.footnote::before {
+.footnote::before
+{
   content: "["
+}
+
+.footnote,
+.reversefootnote
+{
+  text-decoration: none;
 }
 
 .sidenote-number:after
