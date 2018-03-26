@@ -11,3 +11,7 @@ encoding: utf-8
 show_drafts: false
 sass:
   sass_dir: ./_sass
+exclude:
+  - vendor
+  - Gemfile
+  - Gemfile.lock
