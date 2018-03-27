@@ -15,3 +15,6 @@ exclude:
   - vendor
   - Gemfile
   - Gemfile.lock
+  - scripts
+  - CNAME
+  - README.md

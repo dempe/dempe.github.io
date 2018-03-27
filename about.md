@@ -17,7 +17,6 @@ display: true
   > <footer>David Suzuki, interview with Neil Campbell, <i>Biology, 3rd Edition</i></footer>
 </div>
 
-
 {%
    include margin_note_with_image.html
    note='Me eating a durian for the first time in Bangkok.'
