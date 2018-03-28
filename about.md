@@ -8,13 +8,8 @@ display: true
 <div class="epigraph">
   <blockquote>
     <p>In the beginner's mind there are many possibilities; in the expert's mind there are few.</p>
-    <footer>Shunryu Suzuki,  <cite>Zen Mind, Beginner's Mind</cite></footer>
+    <footer>Shunryu Suzuki, <cite>Zen Mind, Beginner's Mind</cite></footer>
   </blockquote>
-</div>
-
-<div class="epigraph" markdown="1">
-  > With introductory classes ... you realize that students come in without all of the prejudices ... so they can ask a question that really makes you look at things in a different way.
-  > <footer>David Suzuki, interview with Neil Campbell, <i>Biology, 3rd Edition</i></footer>
 </div>
 
 {%
