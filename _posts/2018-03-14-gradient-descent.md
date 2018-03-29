@@ -7,7 +7,7 @@ tags: machine-learning
 excerpt: Get familiar with one the most common machine learning algorithms.
 ---
 
-Imagine you're snow camping. You just built a nice igloo, and you lay down to go to sleep. Shortly after dozing off, a drop of ice cold water hits you right in the forehead. There's a dent in your igloo's ceiling!
+Imagine you're snow camping. You just built an igloo, and you lay down to sleep. Shortly after dozing off, a drop of cold water hits you right in the forehead. There's a dent in your ceiling!
 
 The path that a water droplet takes as it runs down the side of your igloo is called _gradient descent_. Gradient descent is an algorithm that takes a curve (the gradient) and finds a way from its starting position to the lowest point that it can find on the curve (the descent). Hopefully, it makes it all the way down the side of the igloo, but if there's a dent, droplets will get stuck there. In calculus, a dent is called a _local minimum_, whereas the bottom of the igloo would be the _global minimum_. Whether we're talking about igloos or linear regression, our goal with gradient descent is to always find the global minimum and not get stuck in local minima.
 

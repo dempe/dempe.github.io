@@ -6,9 +6,9 @@ layout: default
   <ul class="post-list">
     {% for page in site.posts %}
       <li>
-        <h2>
+        <h3>
           <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
-        </h2>
+        </h3>
         {{ page.excerpt | markdownify }}
         {% include post_meta.html %}
       </li>

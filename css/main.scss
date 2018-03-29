@@ -650,11 +650,6 @@ header
   margin-top: 20px;
 }
 
-.post-link
-{
-  display: inline-block;
-}
-
 body
 {
   background-color: $background-color;
@@ -682,10 +677,25 @@ body
   font-family: "han-serif";
 }
 
+.post-list
+{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
 .post-list p
 {
   width: 100%;
   margin: 0;
+  font-size: 20px;
+}
+
+.post-link
+{
+  display: inline-block;
+  text-decoration: none;
+  margin: 0px;
 }
 
 .home .marginnote,
@@ -732,12 +742,6 @@ body
   }
 }
 
-.post-list
-{
-  margin-left: 0;
-  list-style: none;
-}
-
 .post-meta
 {
   clear: both;
@@ -753,14 +757,8 @@ body
   clear:both
 }
 
-.post-list,
 .site-footer > blockquote
 {
   margin: 0;
   padding: 0;
-}
-
-.post-link
-{
-  text-decoration: none;
 }
