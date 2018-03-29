@@ -6,6 +6,5 @@ layout: default
   <h1>{{ page.title | escape }}</h1>
   <b>{{ page.excerpt | markdownify }}</b>
   <div class="post-content">{{ content }}</div>
-  <br/><br/><br/><br/>
+  {% include post_meta.html %}
 </article>
-{% include post_meta.html %}
