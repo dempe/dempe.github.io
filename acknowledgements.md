@@ -1,6 +1,5 @@
 ---
 layout: page
-permalink: /acknowledgements/
 title: Acknowledgements
 display: true
 ---
