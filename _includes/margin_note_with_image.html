@@ -1,4 +1,4 @@
 <span class="marginnote">
-  <img src="{{ include.src }}" alt="{{ include.alt }}">
+  <img src="{{ include.src | prepend: site.baseurl }}" alt="{{ include.alt }}">
   {{ include.note }}
 </span>
