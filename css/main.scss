@@ -12,7 +12,7 @@ $base1:     #93a1a1;
 $base2:     #eee8d5;
 $base3:     #fdf6e3;
 
-$background-color: #e6e5dc;
+$background-color: #eddfc8;
 $foreground-color: #000000;
 $midground-color: #888888;
 
@@ -660,7 +660,8 @@ body
 
   &:hover
   {
-    font-weight: bold;
+    color: $midground-color;
+    //font-weight: bold;
     // border-style: solid;
     // border-width: 0px 0px 1px 0px;
   }
