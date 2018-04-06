@@ -1,17 +1,8 @@
----
-layout: default
----
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>TITLE</title>
+</head>
 
-<div class="home">
-  <ul class="post-list">
-    {% for page in site.posts %}
-      <li>
-        <h3>
-          <a class="post-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title | escape }}</a>
-        </h3>
-        {{ page.excerpt | markdownify }}
-        {% include post_meta.html %}
-      </li>
-    {% endfor %}
-  </ul>
-</div>
+<a href="/shoshin/">blog</a>

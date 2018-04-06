@@ -3,8 +3,7 @@ email: chrisdempewolf@protonmail.com
 description: Forever in search of the farther shore.
 url: "http://chrisdempewolf.com"
 github_username:  dempe
-baseurl: /shoshin
-permalink: /:title
+permalink: /shoshin/:title
 markdown: kramdown
 safe: true
 timezone: America/Los_Angeles

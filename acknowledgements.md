@@ -1,6 +1,7 @@
 ---
 layout: page
 title: Acknowledgements
+permalink: /shoshin/acknowledgements
 display: true
 ---
 
