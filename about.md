@@ -23,4 +23,4 @@ I'm Chris Dempewolf, [yet another](https://en.wikipedia.org/wiki/Yet_another) so
 
 This site's title, <span lang="ja">{{ site.title | escape }}</span> (pronounced sho-sheen), is a Zen concept roughly translated as "beginner's mind."  It implies curiosity, openness, and approaching things without preconceptions.  It is the goal of this blog to explore many new and interesting topics - always through the eyes of a beginner.
 
-Thanks for visiting.  You can reach me at <a href="mailto:chrisdempewolf@protonmail.com">chrisdempewolf@protonmail.com</a>.
+Thanks for visiting.  If you like what you see, subscribe to my [RSS feed](/feed.xml). You can reach me at <a href="mailto:chrisdempewolf@protonmail.com">chrisdempewolf@protonmail.com</a>.
