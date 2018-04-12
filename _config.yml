@@ -8,9 +8,6 @@ markdown: kramdown
 safe: true
 timezone: America/Los_Angeles
 encoding: utf-8
-show_drafts: false
-sass:
-  sass_dir: ./_sass
 exclude:
   - vendor
   - Gemfile
