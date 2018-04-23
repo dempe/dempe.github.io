@@ -30,4 +30,4 @@ There are two broad categories of machine learning algorithms: _supervised_ and 
   - A _regression_ algorithm fits data to a continuous function (e.g., given a person, determine his or her age or, given a tumor, determine if it is malignant or not).
 - An _unsupervised_ algorithm is given a set of _unlabeled_ data and tasked with finding structure in the data.
   - A _clustering_ algorithm finds groups of like data (e.g., finding market segments, grouping similar news articles, etc.).
-  - A _non-clustering_ algorithm finds a single, interesting trend in the data as in singular value decomposition.
+  - A _non-clustering_ algorithm finds a single, interesting trend in the data (e.g., focusing on a person's voice amid a noisy background).
