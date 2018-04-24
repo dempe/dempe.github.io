@@ -1,0 +1,17 @@
+body
+{
+  color: #888888;
+  background-color: #000000;
+  font-size: 5rem;
+  float: left;
+}
+
+p
+{
+  margin-right: 4rem;
+}
+
+a
+{
+  color: #888888;
+}
