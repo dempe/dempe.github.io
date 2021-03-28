@@ -8,6 +8,7 @@ This blog was built with [Hugo](https://gohugo.io/).  The theme I'm using is [Hu
 
 - [Twitter](https://twitter.com/chrisdempewolf1)
 - [Instagram](https://www.instagram.com/cdempewolf9000/)
+- [Github](https://github.com/dempe)
 - or email me at <a href="mailto:chris@chrisdempewolf.com">chris@chrisdempewolf.com</a>.
 
 Thanks for visiting!
