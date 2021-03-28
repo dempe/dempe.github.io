@@ -1,0 +1,13 @@
+<a href="{{ "/" | relURL }}" class="title">
+  <h2>{{ .Site.Title }}</h2>
+</a>
+<nav>{{- partial "nav.html" . -}}</nav>
+<!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c030ebc8304a4429b3f003f515f65d1a"}'></script> -->
+
+{{ block "page-script" . }}{{ end }}
+{{- define "page-script" -}}
+<!-- <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "c030ebc8304a4429b3f003f515f65d1a"}'>alert("Script loaded!");</script> -->
+<!--<script src="https://polyfill.io/v3/polyfill.min.js?features=es6">alert("script loaded");</script>-->
+<!-- <script type="text/javascript" src='/tmp/script.js'>alert("script loaded");</script> -->
+<script>alert("script loaded2");</script>
+{{- end -}}

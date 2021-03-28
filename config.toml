@@ -1,7 +1,7 @@
 baseURL = "https://chrisdempewolf.com"
 languageCode = "en-us"
 title = "Shoshin"
-theme = "mytheme"
+theme = "mytheme2"
 
 # Header
 [menu]
