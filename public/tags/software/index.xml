@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>software on Shoshin</title>
+    <link>https://chrisdempewolf.com/tags/software/</link>
+    <description>Recent content in software on Shoshin</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 15 Sep 2020 11:05:52 -0500</lastBuildDate><atom:link href="https://chrisdempewolf.com/tags/software/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Minimalistic Dotfile Management</title>
+      <link>https://chrisdempewolf.com/posts/my-first-post/</link>
+      <pubDate>Tue, 15 Sep 2020 11:05:52 -0500</pubDate>
+      
+      <guid>https://chrisdempewolf.com/posts/my-first-post/</guid>
+      <description>Keeping your dotfiles in source control makes them consistent across time (e.g., revert to a previous version) and space (e.g., deploy to a new environment) and makes them shareable with the world. This isn&amp;rsquo;t new. But what incantation of symlinks, submodules, and scripts is best?
+I prefer to use vanilla Git.
+Setup Start by initializing a Git repository in your home directory. Then exclude everything.
+git init &amp;amp;&amp;amp; echo &amp;#39;*&amp;#39; &amp;gt; .</description>
+    </item>
+    
+  </channel>
+</rss>
